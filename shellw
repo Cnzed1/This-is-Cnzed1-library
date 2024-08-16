@@ -1,0 +1,9 @@
+#!/bin/bash
+read -p "请输入一个路径" name
+
+if [ -e  $name  ];then
+   rm -rf $name/*
+else
+    mkdir $name
+fi
+
